@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180341111A08F54000B80CD3 /* KiteLoginViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1803410F1A08F54000B80CD3 /* KiteLoginViewController.mm */; };
+		180341121A08F54000B80CD3 /* KiteLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180341101A08F54000B80CD3 /* KiteLoginViewController.xib */; };
+		180341161A0904A400B80CD3 /* login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 180341151A0904A400B80CD3 /* login_background.png */; };
+		180341181A09059900B80CD3 /* kite_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 180341171A09059900B80CD3 /* kite_Logo.png */; };
+		1803411A1A090AF900B80CD3 /* textFieldBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 180341191A090AF900B80CD3 /* textFieldBack.png */; };
+		1803411E1A09107F00B80CD3 /* UITextField+Customization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803411D1A09107F00B80CD3 /* UITextField+Customization.m */; };
+		180341201A09135700B80CD3 /* buttonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 1803411F1A09135700B80CD3 /* buttonBack.png */; };
+		180341241A09211E00B80CD3 /* KiteMessanger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 180341231A09211E00B80CD3 /* KiteMessanger.mm */; };
+		180341271A09225800B80CD3 /* KiteUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 180341261A09225800B80CD3 /* KiteUser.m */; };
+		1803412C1A0922F400B80CD3 /* KiteAccountManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1803412B1A0922F400B80CD3 /* KiteAccountManager.mm */; };
+		1803412F1A0932A700B80CD3 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803412E1A0932A700B80CD3 /* Constants.m */; };
+		180341331A096DAD00B80CD3 /* KiteMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180341321A096DAD00B80CD3 /* KiteMenuViewController.m */; };
+		180456E71A0AB3BD006BC913 /* PortSIPLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180456E61A0AB3BD006BC913 /* PortSIPLib.framework */; };
+		45A8C2AC1A07D3AB00D3BCC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8C2AB1A07D3AB00D3BCC4 /* main.m */; };
+		45A8C2AF1A07D3AB00D3BCC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8C2AE1A07D3AB00D3BCC4 /* AppDelegate.m */; };
+		45A8C2B21A07D3AB00D3BCC4 /* Kite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45A8C2B01A07D3AB00D3BCC4 /* Kite.xcdatamodeld */; };
+		45A8C2B81A07D3AB00D3BCC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A8C2B61A07D3AB00D3BCC4 /* Main.storyboard */; };
+		45A8C2BA1A07D3AB00D3BCC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A8C2B91A07D3AB00D3BCC4 /* Images.xcassets */; };
+		45A8C2BD1A07D3AB00D3BCC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A8C2BB1A07D3AB00D3BCC4 /* LaunchScreen.xib */; };
+		45A8C2C91A07D3AB00D3BCC4 /* KiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8C2C81A07D3AB00D3BCC4 /* KiteTests.m */; };
+		45C1FE341A0951500048B475 /* SIPCallbackEventsProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45C1FE331A0951500048B475 /* SIPCallbackEventsProxy.mm */; };
+		45C1FE361A09661F0048B475 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE351A09661F0048B475 /* AudioToolbox.framework */; };
+		45C1FE381A09662B0048B475 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE371A09662B0048B475 /* CFNetwork.framework */; };
+		45C1FE3A1A0966430048B475 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE391A0966430048B475 /* libresolv.dylib */; };
+		45C1FE3C1A09664F0048B475 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE3B1A09664F0048B475 /* AVFoundation.framework */; };
+		45C1FE3E1A09665E0048B475 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE3D1A09665E0048B475 /* CoreVideo.framework */; };
+		45C1FE401A0966650048B475 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE3F1A0966650048B475 /* CoreMedia.framework */; };
+		45C1FE421A09666C0048B475 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE411A09666C0048B475 /* QuartzCore.framework */; };
+		45C1FE441A0966730048B475 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE431A0966730048B475 /* OpenGLES.framework */; };
+		45C1FE461A0966CB0048B475 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE451A0966CB0048B475 /* libstdc++.6.0.9.dylib */; };
+		45C1FE481A09824C0048B475 /* libresolv.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1FE471A09824C0048B475 /* libresolv.9.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45A8C2C31A07D3AB00D3BCC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45A8C29E1A07D3AB00D3BCC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45A8C2A51A07D3AB00D3BCC4;
+			remoteInfo = Kite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1803410E1A08F54000B80CD3 /* KiteLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiteLoginViewController.h; path = Authentication/KiteLoginViewController.h; sourceTree = "<group>"; };
+		1803410F1A08F54000B80CD3 /* KiteLoginViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = KiteLoginViewController.mm; path = Authentication/KiteLoginViewController.mm; sourceTree = "<group>"; };
+		180341101A08F54000B80CD3 /* KiteLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KiteLoginViewController.xib; path = Authentication/KiteLoginViewController.xib; sourceTree = "<group>"; };
+		180341151A0904A400B80CD3 /* login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background.png; sourceTree = "<group>"; };
+		180341171A09059900B80CD3 /* kite_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kite_Logo.png; sourceTree = "<group>"; };
+		180341191A090AF900B80CD3 /* textFieldBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textFieldBack.png; sourceTree = "<group>"; };
+		1803411C1A09107F00B80CD3 /* UITextField+Customization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+Customization.h"; path = "Utils/UITextField+Customization.h"; sourceTree = "<group>"; };
+		1803411D1A09107F00B80CD3 /* UITextField+Customization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Customization.m"; path = "Utils/UITextField+Customization.m"; sourceTree = "<group>"; };
+		1803411F1A09135700B80CD3 /* buttonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBack.png; sourceTree = "<group>"; };
+		180341221A09211E00B80CD3 /* KiteMessanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiteMessanger.h; path = Model/KiteMessanger.h; sourceTree = "<group>"; };
+		180341231A09211E00B80CD3 /* KiteMessanger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = KiteMessanger.mm; path = Model/KiteMessanger.mm; sourceTree = "<group>"; };
+		180341251A09225800B80CD3 /* KiteUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiteUser.h; path = Model/Entities/KiteUser.h; sourceTree = "<group>"; };
+		180341261A09225800B80CD3 /* KiteUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KiteUser.m; path = Model/Entities/KiteUser.m; sourceTree = "<group>"; };
+		1803412A1A0922F400B80CD3 /* KiteAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiteAccountManager.h; path = Model/KiteAccountManager.h; sourceTree = "<group>"; };
+		1803412B1A0922F400B80CD3 /* KiteAccountManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = KiteAccountManager.mm; path = Model/KiteAccountManager.mm; sourceTree = "<group>"; };
+		1803412D1A0932A700B80CD3 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1803412E1A0932A700B80CD3 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		180341311A096DAD00B80CD3 /* KiteMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiteMenuViewController.h; path = UI/KiteMenuViewController.h; sourceTree = "<group>"; };
+		180341321A096DAD00B80CD3 /* KiteMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KiteMenuViewController.m; path = UI/KiteMenuViewController.m; sourceTree = "<group>"; };
+		180456E61A0AB3BD006BC913 /* PortSIPLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PortSIPLib.framework; path = Kite/PortSIPLib.framework; sourceTree = "<group>"; };
+		45A8C2A61A07D3AB00D3BCC4 /* Kite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A8C2AA1A07D3AB00D3BCC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A8C2AB1A07D3AB00D3BCC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45A8C2AD1A07D3AB00D3BCC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45A8C2AE1A07D3AB00D3BCC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45A8C2B11A07D3AB00D3BCC4 /* Kite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kite.xcdatamodel; sourceTree = "<group>"; };
+		45A8C2B71A07D3AB00D3BCC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45A8C2B91A07D3AB00D3BCC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45A8C2BC1A07D3AB00D3BCC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		45A8C2C21A07D3AB00D3BCC4 /* KiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A8C2C71A07D3AB00D3BCC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A8C2C81A07D3AB00D3BCC4 /* KiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiteTests.m; sourceTree = "<group>"; };
+		45C1FE311A0950A50048B475 /* SIPRegistrationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPRegistrationDelegate.h; sourceTree = "<group>"; };
+		45C1FE321A0951500048B475 /* SIPCallbackEventsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPCallbackEventsProxy.h; sourceTree = "<group>"; };
+		45C1FE331A0951500048B475 /* SIPCallbackEventsProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SIPCallbackEventsProxy.mm; sourceTree = "<group>"; };
+		45C1FE351A09661F0048B475 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		45C1FE371A09662B0048B475 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		45C1FE391A0966430048B475 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		45C1FE3B1A09664F0048B475 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45C1FE3D1A09665E0048B475 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		45C1FE3F1A0966650048B475 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		45C1FE411A09666C0048B475 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		45C1FE431A0966730048B475 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		45C1FE451A0966CB0048B475 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		45C1FE471A09824C0048B475 /* libresolv.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.9.dylib; path = usr/lib/libresolv.9.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45A8C2A31A07D3AB00D3BCC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C1FE481A09824C0048B475 /* libresolv.9.dylib in Frameworks */,
+				180456E71A0AB3BD006BC913 /* PortSIPLib.framework in Frameworks */,
+				45C1FE461A0966CB0048B475 /* libstdc++.6.0.9.dylib in Frameworks */,
+				45C1FE441A0966730048B475 /* OpenGLES.framework in Frameworks */,
+				45C1FE421A09666C0048B475 /* QuartzCore.framework in Frameworks */,
+				45C1FE401A0966650048B475 /* CoreMedia.framework in Frameworks */,
+				45C1FE3E1A09665E0048B475 /* CoreVideo.framework in Frameworks */,
+				45C1FE3C1A09664F0048B475 /* AVFoundation.framework in Frameworks */,
+				45C1FE3A1A0966430048B475 /* libresolv.dylib in Frameworks */,
+				45C1FE381A09662B0048B475 /* CFNetwork.framework in Frameworks */,
+				45C1FE361A09661F0048B475 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A8C2BF1A07D3AB00D3BCC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1803410C1A08F3FC00B80CD3 /* Messanger */ = {
+			isa = PBXGroup;
+			children = (
+				45A59CE91A0A8E7C00E26B36 /* SIPAroundLogic */,
+				180341281A09226200B80CD3 /* Entities */,
+				180341211A0920EF00B80CD3 /* Model */,
+				1803410D1A08F40A00B80CD3 /* Authentication */,
+				1803412D1A0932A700B80CD3 /* Constants.h */,
+				1803412E1A0932A700B80CD3 /* Constants.m */,
+			);
+			name = Messanger;
+			sourceTree = "<group>";
+		};
+		1803410D1A08F40A00B80CD3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1803410E1A08F54000B80CD3 /* KiteLoginViewController.h */,
+				1803410F1A08F54000B80CD3 /* KiteLoginViewController.mm */,
+				180341101A08F54000B80CD3 /* KiteLoginViewController.xib */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		180341131A09044600B80CD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				180341141A0904A400B80CD3 /* Authentication */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		180341141A0904A400B80CD3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1803411F1A09135700B80CD3 /* buttonBack.png */,
+				180341191A090AF900B80CD3 /* textFieldBack.png */,
+				180341171A09059900B80CD3 /* kite_Logo.png */,
+				180341151A0904A400B80CD3 /* login_background.png */,
+			);
+			name = Authentication;
+			path = Resources/Authentication;
+			sourceTree = "<group>";
+		};
+		1803411B1A09105900B80CD3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1803411C1A09107F00B80CD3 /* UITextField+Customization.h */,
+				1803411D1A09107F00B80CD3 /* UITextField+Customization.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		180341211A0920EF00B80CD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180341291A0922C900B80CD3 /* Authentication */,
+				180341221A09211E00B80CD3 /* KiteMessanger.h */,
+				180341231A09211E00B80CD3 /* KiteMessanger.mm */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		180341281A09226200B80CD3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				180341251A09225800B80CD3 /* KiteUser.h */,
+				180341261A09225800B80CD3 /* KiteUser.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		180341291A0922C900B80CD3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1803412A1A0922F400B80CD3 /* KiteAccountManager.h */,
+				1803412B1A0922F400B80CD3 /* KiteAccountManager.mm */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		180341301A096D5600B80CD3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				180341311A096DAD00B80CD3 /* KiteMenuViewController.h */,
+				180341321A096DAD00B80CD3 /* KiteMenuViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		45A59CE91A0A8E7C00E26B36 /* SIPAroundLogic */ = {
+			isa = PBXGroup;
+			children = (
+				45C1FE311A0950A50048B475 /* SIPRegistrationDelegate.h */,
+				45C1FE321A0951500048B475 /* SIPCallbackEventsProxy.h */,
+				45C1FE331A0951500048B475 /* SIPCallbackEventsProxy.mm */,
+			);
+			name = SIPAroundLogic;
+			sourceTree = "<group>";
+		};
+		45A8C29D1A07D3AB00D3BCC4 = {
+			isa = PBXGroup;
+			children = (
+				180456E61A0AB3BD006BC913 /* PortSIPLib.framework */,
+				45C1FE471A09824C0048B475 /* libresolv.9.dylib */,
+				45C1FE451A0966CB0048B475 /* libstdc++.6.0.9.dylib */,
+				45C1FE431A0966730048B475 /* OpenGLES.framework */,
+				45C1FE411A09666C0048B475 /* QuartzCore.framework */,
+				45C1FE3F1A0966650048B475 /* CoreMedia.framework */,
+				45C1FE3D1A09665E0048B475 /* CoreVideo.framework */,
+				45C1FE3B1A09664F0048B475 /* AVFoundation.framework */,
+				45C1FE391A0966430048B475 /* libresolv.dylib */,
+				45C1FE371A09662B0048B475 /* CFNetwork.framework */,
+				45C1FE351A09661F0048B475 /* AudioToolbox.framework */,
+				45A8C2A81A07D3AB00D3BCC4 /* Kite */,
+				45A8C2C51A07D3AB00D3BCC4 /* KiteTests */,
+				45A8C2A71A07D3AB00D3BCC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45A8C2A71A07D3AB00D3BCC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45A8C2A61A07D3AB00D3BCC4 /* Kite.app */,
+				45A8C2C21A07D3AB00D3BCC4 /* KiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45A8C2A81A07D3AB00D3BCC4 /* Kite */ = {
+			isa = PBXGroup;
+			children = (
+				180341301A096D5600B80CD3 /* UI */,
+				1803411B1A09105900B80CD3 /* Utils */,
+				180341131A09044600B80CD3 /* Resources */,
+				1803410C1A08F3FC00B80CD3 /* Messanger */,
+				45A8C2AD1A07D3AB00D3BCC4 /* AppDelegate.h */,
+				45A8C2AE1A07D3AB00D3BCC4 /* AppDelegate.m */,
+				45A8C2B61A07D3AB00D3BCC4 /* Main.storyboard */,
+				45A8C2B91A07D3AB00D3BCC4 /* Images.xcassets */,
+				45A8C2BB1A07D3AB00D3BCC4 /* LaunchScreen.xib */,
+				45A8C2B01A07D3AB00D3BCC4 /* Kite.xcdatamodeld */,
+				45A8C2A91A07D3AB00D3BCC4 /* Supporting Files */,
+			);
+			path = Kite;
+			sourceTree = "<group>";
+		};
+		45A8C2A91A07D3AB00D3BCC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A8C2AA1A07D3AB00D3BCC4 /* Info.plist */,
+				45A8C2AB1A07D3AB00D3BCC4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45A8C2C51A07D3AB00D3BCC4 /* KiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				45A8C2C81A07D3AB00D3BCC4 /* KiteTests.m */,
+				45A8C2C61A07D3AB00D3BCC4 /* Supporting Files */,
+			);
+			path = KiteTests;
+			sourceTree = "<group>";
+		};
+		45A8C2C61A07D3AB00D3BCC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A8C2C71A07D3AB00D3BCC4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45A8C2A51A07D3AB00D3BCC4 /* Kite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A8C2CC1A07D3AB00D3BCC4 /* Build configuration list for PBXNativeTarget "Kite" */;
+			buildPhases = (
+				45A8C2A21A07D3AB00D3BCC4 /* Sources */,
+				45A8C2A31A07D3AB00D3BCC4 /* Frameworks */,
+				45A8C2A41A07D3AB00D3BCC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kite;
+			productName = Kite;
+			productReference = 45A8C2A61A07D3AB00D3BCC4 /* Kite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45A8C2C11A07D3AB00D3BCC4 /* KiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A8C2CF1A07D3AB00D3BCC4 /* Build configuration list for PBXNativeTarget "KiteTests" */;
+			buildPhases = (
+				45A8C2BE1A07D3AB00D3BCC4 /* Sources */,
+				45A8C2BF1A07D3AB00D3BCC4 /* Frameworks */,
+				45A8C2C01A07D3AB00D3BCC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45A8C2C41A07D3AB00D3BCC4 /* PBXTargetDependency */,
+			);
+			name = KiteTests;
+			productName = KiteTests;
+			productReference = 45A8C2C21A07D3AB00D3BCC4 /* KiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45A8C29E1A07D3AB00D3BCC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Air;
+				TargetAttributes = {
+					45A8C2A51A07D3AB00D3BCC4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					45A8C2C11A07D3AB00D3BCC4 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 45A8C2A51A07D3AB00D3BCC4;
+					};
+				};
+			};
+			buildConfigurationList = 45A8C2A11A07D3AB00D3BCC4 /* Build configuration list for PBXProject "Kite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45A8C29D1A07D3AB00D3BCC4;
+			productRefGroup = 45A8C2A71A07D3AB00D3BCC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45A8C2A51A07D3AB00D3BCC4 /* Kite */,
+				45A8C2C11A07D3AB00D3BCC4 /* KiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45A8C2A41A07D3AB00D3BCC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180341161A0904A400B80CD3 /* login_background.png in Resources */,
+				45A8C2B81A07D3AB00D3BCC4 /* Main.storyboard in Resources */,
+				1803411A1A090AF900B80CD3 /* textFieldBack.png in Resources */,
+				180341121A08F54000B80CD3 /* KiteLoginViewController.xib in Resources */,
+				45A8C2BD1A07D3AB00D3BCC4 /* LaunchScreen.xib in Resources */,
+				45A8C2BA1A07D3AB00D3BCC4 /* Images.xcassets in Resources */,
+				180341201A09135700B80CD3 /* buttonBack.png in Resources */,
+				180341181A09059900B80CD3 /* kite_Logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A8C2C01A07D3AB00D3BCC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45A8C2A21A07D3AB00D3BCC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A8C2B21A07D3AB00D3BCC4 /* Kite.xcdatamodeld in Sources */,
+				180341271A09225800B80CD3 /* KiteUser.m in Sources */,
+				180341331A096DAD00B80CD3 /* KiteMenuViewController.m in Sources */,
+				1803411E1A09107F00B80CD3 /* UITextField+Customization.m in Sources */,
+				180341241A09211E00B80CD3 /* KiteMessanger.mm in Sources */,
+				1803412C1A0922F400B80CD3 /* KiteAccountManager.mm in Sources */,
+				45C1FE341A0951500048B475 /* SIPCallbackEventsProxy.mm in Sources */,
+				180341111A08F54000B80CD3 /* KiteLoginViewController.mm in Sources */,
+				45A8C2AF1A07D3AB00D3BCC4 /* AppDelegate.m in Sources */,
+				45A8C2AC1A07D3AB00D3BCC4 /* main.m in Sources */,
+				1803412F1A0932A700B80CD3 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A8C2BE1A07D3AB00D3BCC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A8C2C91A07D3AB00D3BCC4 /* KiteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45A8C2C41A07D3AB00D3BCC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45A8C2A51A07D3AB00D3BCC4 /* Kite */;
+			targetProxy = 45A8C2C31A07D3AB00D3BCC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45A8C2B61A07D3AB00D3BCC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A8C2B71A07D3AB00D3BCC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45A8C2BB1A07D3AB00D3BCC4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A8C2BC1A07D3AB00D3BCC4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45A8C2CA1A07D3AB00D3BCC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45A8C2CB1A07D3AB00D3BCC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45A8C2CD1A07D3AB00D3BCC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/air/Downloads/iOSSample_XCode,
+					"$(PROJECT_DIR)/Kite",
+				);
+				INFOPLIST_FILE = Kite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45A8C2CE1A07D3AB00D3BCC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/air/Downloads/iOSSample_XCode,
+					"$(PROJECT_DIR)/Kite",
+				);
+				INFOPLIST_FILE = Kite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		45A8C2D01A07D3AB00D3BCC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kite.app/Kite";
+			};
+			name = Debug;
+		};
+		45A8C2D11A07D3AB00D3BCC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kite.app/Kite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45A8C2A11A07D3AB00D3BCC4 /* Build configuration list for PBXProject "Kite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A8C2CA1A07D3AB00D3BCC4 /* Debug */,
+				45A8C2CB1A07D3AB00D3BCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45A8C2CC1A07D3AB00D3BCC4 /* Build configuration list for PBXNativeTarget "Kite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A8C2CD1A07D3AB00D3BCC4 /* Debug */,
+				45A8C2CE1A07D3AB00D3BCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45A8C2CF1A07D3AB00D3BCC4 /* Build configuration list for PBXNativeTarget "KiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A8C2D01A07D3AB00D3BCC4 /* Debug */,
+				45A8C2D11A07D3AB00D3BCC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45A8C2B01A07D3AB00D3BCC4 /* Kite.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45A8C2B11A07D3AB00D3BCC4 /* Kite.xcdatamodel */,
+			);
+			currentVersion = 45A8C2B11A07D3AB00D3BCC4 /* Kite.xcdatamodel */;
+			path = Kite.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45A8C29E1A07D3AB00D3BCC4 /* Project object */;
+}

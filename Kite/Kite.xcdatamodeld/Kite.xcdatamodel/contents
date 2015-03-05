@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="KiteContact" representedClassName="KiteContact" syncable="YES">
+        <attribute name="presentance" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sipURI" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="inbox" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="KiteMessage" inverseName="sender" inverseEntity="KiteMessage" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KiteUserInfo" inverseName="contact" inverseEntity="KiteUserInfo" syncable="YES"/>
+        <relationship name="outbox" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="KiteMessage" inverseName="reciver" inverseEntity="KiteMessage" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KiteUser" inverseName="selfContact" inverseEntity="KiteUser" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KiteUser" inverseName="contacts" inverseEntity="KiteUser" syncable="YES"/>
+    </entity>
+    <entity name="KiteMessage" representedClassName="KiteMessage" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="reciver" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KiteContact" inverseName="outbox" inverseEntity="KiteContact" syncable="YES"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KiteContact" inverseName="inbox" inverseEntity="KiteContact" syncable="YES"/>
+    </entity>
+    <entity name="KiteUser" representedClassName="KiteUser" syncable="YES">
+        <attribute name="domain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="sipURI" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="KiteContact" inverseName="user" inverseEntity="KiteContact" syncable="YES"/>
+        <relationship name="selfContact" maxCount="1" deletionRule="Nullify" destinationEntity="KiteContact" inverseName="owner" inverseEntity="KiteContact" syncable="YES"/>
+    </entity>
+    <entity name="KiteUserInfo" representedClassName="KiteUserInfo" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personalStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KiteContact" inverseName="info" inverseEntity="KiteContact" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="KiteContact" positionX="2239" positionY="-6628" width="128" height="163"/>
+        <element name="KiteMessage" positionX="2529" positionY="-6597" width="128" height="103"/>
+        <element name="KiteUserInfo" positionX="2007" positionY="-6606" width="128" height="103"/>
+        <element name="KiteUser" positionX="2034" positionY="-6372" width="128" height="118"/>
+    </elements>
+</model>

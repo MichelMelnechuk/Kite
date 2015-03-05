@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D6285B68-7B1B-4F94-B6E8-B8BE0D76F31C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>41EF4905D84BEDC253CE16A87199C0E8A3CB7004</key>
+		<string>git.assembla.com:kite-messanger.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Kite/Kite.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>41EF4905D84BEDC253CE16A87199C0E8A3CB7004</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.assembla.com:kite-messanger.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>41EF4905D84BEDC253CE16A87199C0E8A3CB7004</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>41EF4905D84BEDC253CE16A87199C0E8A3CB7004</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kite-messanger</string>
+		</dict>
+	</array>
+</dict>
+</plist>
